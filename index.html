@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+
+  <header>
+    <img src="./images/logo.svg" alt="logo" />
+  </header>
+
+  <body>
+    <main>
+      <div id="options" class="optionsContainer">
+        <form id="optionsForm" class="optionsForm">
+          <!--Bill amount section-->
+
+          <label class="blockLabel" for="billAmount">Bill</label>
+          <img
+            class="iconForBill"
+            src="./images/icon-dollar.svg"
+            alt="dollar sign"
+          />
+          <input
+            type="number"
+            name="billAmount"
+            class="amountBox bill"
+            id="billAmount"
+            placeholder="0"
+          />
+
+          <!--Tip amount section-->
+
+          <label class="blockLabel">Select Tip %</label>
+
+          <input
+            type="radio"
+            name="perc"
+            class="tipBtn"
+            id="5perc"
+            value="5"
+            hidden
+          />
+          <label class="forRadio" for="5perc">5%</label>
+          <input
+            type="radio"
+            name="perc"
+            class="tipBtn"
+            id="10perc"
+            value="10"
+            hidden
+          />
+          <label class="forRadio" for="10perc">10%</label>
+          <input
+            type="radio"
+            name="perc"
+            class="tipBtn"
+            id="15perc"
+            value="15"
+            hidden
+          />
+          <label class="forRadio" for="15perc">15%</label>
+          <input
+            type="radio"
+            name="perc"
+            class="tipBtn"
+            id="20perc"
+            value="20"
+            hidden
+          />
+          <label class="forRadio" for="20perc">20%</label>
+          <input
+            type="radio"
+            name="perc"
+            class="tipBtn"
+            id="25perc"
+            value="25"
+            hidden
+          />
+          <label class="forRadio" for="25perc">25%</label>
+
+          <input
+            type="number"
+            name="customTip"
+            class="customTip"
+            id="customTip"
+            value=""
+            placeholder="Custom"
+          />
+
+          <!--Number of people section-->
+
+          <label class="blockLabel" for="peopleAmount">Number Of People</label>
+          <img
+            class="iconForPeople"
+            src="./images/icon-person.svg"
+            alt="person"
+          />
+          <input
+            type="number"
+            name="peopleAmount"
+            class="amountBox people"
+            id="peopleAmount"
+            placeholder="0"
+          />
+        </form>
+      </div>
+
+      <!--Calculated values-->
+
+      <div id="calculated" class="calculatedContainer">
+        <div class="amountDiv">
+          <span class="calcLabelAmount">Tip Amount</span>
+          <span class="pp Amount">/ person</span>
+          <span class="calcLabelTotal">Total</span>
+          <span class="pp Total">/ person</span>
+        </div>
+        <div class="bigNumDiv">
+          <span class="bigNum Amount">$0.00</span>
+          <span class="bigNum AmountPP">$0.00</span>
+        </div>
+
+        <button class="resetBtn" id="reset">Reset</button>
+      </div>
+    </main>
+  </body>
+</html>

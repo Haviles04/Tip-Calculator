@@ -1,0 +1,236 @@
+body, html{
+    width: 100%;
+    background-color:hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:hsl(189, 41%, 97%)
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+}
+
+header{
+    color:hsla(183, 100%, 15%, .7);
+    margin-top: 125px;
+    margin-bottom:70px;
+    line-height: .75;
+}
+
+main{
+    margin: 0 auto;
+    background-color: white;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius:25px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.blockLabel{
+    display:block;
+    width:100%;
+    margin-top:50px;
+    margin-bottom:10px;
+}
+
+
+.optionsContainer{
+    color: hsl(186, 14%, 43%);
+    width:420px;
+    height:400px;  
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left:30px;
+}
+
+.amountBox{
+    display: block;
+    background-color: hsl(189, 41%, 97%);
+    border:none;
+    height: 40px;
+    width: 375px;
+    position: relative;
+    text-align: end;
+    font-family: 'Space Mono', sans-serif;
+    font-size:20px;
+    outline:none;
+}
+
+.amountBox:hover{
+  border: solid 2px hsl(172, 67%, 45%);
+}
+
+.amountBox:focus{
+  border:solid 2px hsl(172, 67%, 45%);
+  color:hsl(183, 100%, 15%);
+  text-align: end;
+  font-family: 'Space Mono', sans-serif;
+  font-size: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.forRadio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 118px;
+    background-color:hsl(183, 100%, 15%);
+    margin:7px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color:hsl(189, 41%, 97%);  
+    font-size:24px;
+  }
+
+  .tipBtn:checked + label{
+  background-color: hsl(172, 67%, 45%);
+  color:hsl(183, 100%, 15%);
+  }
+
+  .forRadio:hover{
+  background-color: hsl(172, 67%, 45%);
+  color:hsl(183, 100%, 15%);
+  cursor: pointer;
+  }
+
+  .customTip{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 118px;
+    background-color:hsl(189, 41%, 97%);
+    margin:7px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color:hsl(189, 41%, 97%);    
+    border: none;
+    outline:none;
+  }
+
+  .customTip:hover{
+    border: solid 2px hsl(172, 67%, 45%);
+  }
+
+  .customTip:focus{
+    border:solid 2px hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+    text-align: end;
+    font-family: 'Space Mono', sans-serif;
+    font-size: 20px;
+  }
+
+  
+
+  .customTip::placeholder{
+    text-align: center;
+    font-family: 'Space Mono', sans-serif;
+    font-size:20px;
+  }
+
+  ::placeholder{
+    text-align: end;
+  }
+
+  .iconForBill{
+    position: relative;
+    left: 25px;
+    z-index: 1;
+  }
+
+  .iconForPeople{
+  position: relative;
+  left: 25px;
+  z-index: 1;
+  }
+
+  .calculatedContainer {
+    background-color: hsl(183, 100%, 15%);
+    width:420px;
+    height:420px;
+    border-radius: 15px;
+    margin:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+
+  .pp{
+    font-size: 12px;
+  }
+  
+  .amountDiv{
+    padding-left:40px;
+    padding-top:50px; 
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .calcLabelTotal{
+    padding-top:50px;
+  }
+
+  .bigNumDiv{
+    font-size: 45px;
+    color: hsl(172, 67%, 45%);
+    display: flex;
+    flex-direction: column;
+    padding-right:40px;
+    padding-top:40px;
+  }
+
+  .bigNum{
+    padding-bottom:30px;
+  }
+  
+  .resetBtn{
+    font-family: 'Space Mono', sans-serif;
+    font-size: 20px;
+    height: 48px;
+    width: 21rem;
+    margin: 95px auto;
+    background-color: hsla(172, 67%, 45%, .3);
+    color:hsl(183, 100%, 15%);
+    border:none;
+    border-radius: 10px;
+  }
+
+  .resetBtn:hover{
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+  }
+
+
+
+/*- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)*/
