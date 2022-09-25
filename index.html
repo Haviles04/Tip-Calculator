@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
       rel="stylesheet"
     />
-
+    <script defer src="./index.js"></script>
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
 
@@ -43,6 +43,7 @@
             class="amountBox bill"
             id="billAmount"
             placeholder="0"
+            required
           />
 
           <!--Tip amount section-->
@@ -54,8 +55,9 @@
             name="perc"
             class="tipBtn"
             id="5perc"
-            value="5"
+            value=".05"
             hidden
+            onclick = customTipClear();
           />
           <label class="forRadio" for="5perc">5%</label>
           <input
@@ -63,8 +65,9 @@
             name="perc"
             class="tipBtn"
             id="10perc"
-            value="10"
+            value=".10"
             hidden
+            onclick = customTipClear();
           />
           <label class="forRadio" for="10perc">10%</label>
           <input
@@ -72,8 +75,9 @@
             name="perc"
             class="tipBtn"
             id="15perc"
-            value="15"
+            value=".15"
             hidden
+            onclick = customTipClear();
           />
           <label class="forRadio" for="15perc">15%</label>
           <input
@@ -81,8 +85,9 @@
             name="perc"
             class="tipBtn"
             id="20perc"
-            value="20"
+            value=".20"
             hidden
+            onclick = customTipClear();
           />
           <label class="forRadio" for="20perc">20%</label>
           <input
@@ -90,8 +95,9 @@
             name="perc"
             class="tipBtn"
             id="25perc"
-            value="25"
+            value=".25"
             hidden
+            onclick = customTipClear();
           />
           <label class="forRadio" for="25perc">25%</label>
 
@@ -102,6 +108,7 @@
             id="customTip"
             value=""
             placeholder="Custom"
+            onclick = customTipChange();
           />
 
           <!--Number of people section-->
@@ -117,7 +124,9 @@
             name="peopleAmount"
             class="amountBox people"
             id="peopleAmount"
+            value="0"
             placeholder="0"
+            required
           />
         </form>
       </div>
@@ -132,8 +141,8 @@
           <span class="pp Total">/ person</span>
         </div>
         <div class="bigNumDiv">
-          <span class="bigNum Amount">$0.00</span>
-          <span class="bigNum AmountPP">$0.00</span>
+          <span id="tipAmountBig" class="bigNum Amount">$0.00</span>
+          <span id="totalAmountBig" class="bigNum AmountPP">$0.00</span>
         </div>
 
         <button class="resetBtn" id="reset">Reset</button>

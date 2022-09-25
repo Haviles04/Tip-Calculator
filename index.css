@@ -85,6 +85,7 @@ form{
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    font-family: 'Space Mono', sans-serif;
 }
 
 .forRadio{
@@ -95,10 +96,10 @@ form{
     align-items: center;
     height: 50px;
     width: 118px;
-    background-color:hsl(183, 100%, 15%);
     margin:7px;
     border-radius: 5px;
     box-sizing: border-box;
+    background-color:hsl(183, 100%, 15%);
     color:hsl(189, 41%, 97%);  
     font-size:24px;
   }
@@ -125,8 +126,11 @@ form{
     background-color:hsl(189, 41%, 97%);
     margin:7px;
     border-radius: 5px;
+    text-align: end;
+    font-size: 20px;
     box-sizing: border-box;
-    color:hsl(189, 41%, 97%);    
+    color:hsl(183, 100%, 15%);    
+    font-family: 'Space Mono', sans-serif;
     border: none;
     outline:none;
   }
@@ -197,7 +201,7 @@ form{
   }
 
   .bigNumDiv{
-    font-size: 45px;
+    font-size: 35px;
     color: hsl(172, 67%, 45%);
     display: flex;
     flex-direction: column;
