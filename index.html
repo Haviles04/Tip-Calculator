@@ -32,11 +32,7 @@
           <!--Bill amount section-->
 
           <label class="blockLabel" for="billAmount">Bill</label>
-          <img
-            class="iconForBill"
-            src="./images/icon-dollar.svg"
-            alt="dollar sign"
-          />
+          <p id="peopleValid" class="validity invalidBill">Must be greater than 0.</p>
           <input
             type="number"
             name="billAmount"
@@ -49,7 +45,7 @@
           <!--Tip amount section-->
 
           <label class="blockLabel">Select Tip %</label>
-
+          <p id="peopleValid" class="validity invalidTip">Please select or enter a tip</p>
           <input
             type="radio"
             name="perc"
@@ -114,11 +110,7 @@
           <!--Number of people section-->
 
           <label class="blockLabel" for="peopleAmount">Number Of People</label>
-          <img
-            class="iconForPeople"
-            src="./images/icon-person.svg"
-            alt="person"
-          />
+          <p id="peopleValid" class="validity invalidPeople">Must be greater than 0.</p>
           <input
             type="number"
             name="peopleAmount"

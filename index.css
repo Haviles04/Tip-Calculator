@@ -35,9 +35,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.blockLabel{
-    display:block;
-    width:100%;
+.blockLabel{  
+    width:50%;
     margin-top:50px;
     margin-bottom:10px;
 }
@@ -66,6 +65,18 @@ input::-webkit-inner-spin-button {
     font-family: 'Space Mono', sans-serif;
     font-size:20px;
     outline:none;
+}
+
+.amountBox.bill{
+  background-image: url(./images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 2px;
+}
+
+.amountBox.people{
+  background-image: url(./images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 2px;
 }
 
 .amountBox:hover{
@@ -228,6 +239,13 @@ form{
   .resetBtn:hover{
     background-color: hsl(172, 67%, 45%);
     cursor: pointer;
+  }
+
+  .validity {
+    visibility: hidden;
+    font-size: 10px;
+    color: red;
+    margin-top: 50px;
   }
 
 
