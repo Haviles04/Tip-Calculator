@@ -55,7 +55,7 @@ const sumItUp = () => {
     document.getElementById("tipAmountBig").innerHTML = `$ ${tipAmountFinal}`;
     document.getElementById("totalAmountBig").innerHTML = `$ ${totalFinal}`;
   }
-};
+;
 
 // calls for sumItUp function to run whenever anything on any form is changed
 const billAmountInput = document
