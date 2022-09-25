@@ -64,7 +64,7 @@ use if (num of people = 0){
 } else { run rest of function }
 
 
-
+*/
 
 
 
