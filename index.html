@@ -32,7 +32,7 @@
           <!--Bill amount section-->
 
           <label class="blockLabel" for="billAmount">Bill</label>
-          <p id="peopleValid" class="validity invalidBill">Must be greater than 0.</p>
+          <p id ="invalidBill" class="validity">Must be greater than 0.</p>
           <input
             type="number"
             name="billAmount"
@@ -40,12 +40,13 @@
             id="billAmount"
             value="0"
             required
+            min=".01"
           />
 
           <!--Tip amount section-->
 
           <label class="blockLabel">Select Tip %</label>
-          <p id="peopleValid" class="validity invalidTip">Please select or enter a tip</p>
+          <p class="validity" id="invalidTip">Please select or enter a tip</p>
           <input
             type="radio"
             name="perc"
@@ -110,7 +111,7 @@
           <!--Number of people section-->
 
           <label class="blockLabel" for="peopleAmount">Number Of People</label>
-          <p id="peopleValid" class="validity invalidPeople">Must be greater than 0.</p>
+          <p class="validity" id="invalidPeople">Must be greater than 0.</p>
           <input
             type="number"
             name="peopleAmount"
@@ -118,6 +119,7 @@
             id="peopleAmount"
             value="0"
             required
+            min="1";
           />
         </form>
       </div>

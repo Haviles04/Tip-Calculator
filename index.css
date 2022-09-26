@@ -236,10 +236,12 @@ form{
     border-radius: 10px;
   }
 
-  .resetBtn:hover{
+  .resetBtn:hover,
+  .resetOn{
     background-color: hsl(172, 67%, 45%);
     cursor: pointer;
   }
+
 
   .validity {
     visibility: hidden;
@@ -247,7 +249,6 @@ form{
     color: red;
     margin-top: 50px;
   }
-
 
 /*- Very dark cyan: hsl(183, 100%, 15%)
 - Dark grayish cyan: hsl(186, 14%, 43%)
