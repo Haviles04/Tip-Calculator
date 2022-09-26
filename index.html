@@ -38,7 +38,7 @@
             name="billAmount"
             class="amountBox bill"
             id="billAmount"
-            placeholder="0"
+            value="0"
             required
           />
 
@@ -53,7 +53,7 @@
             id="5perc"
             value=".05"
             hidden
-            onclick = customTipClear();
+            onclick = customTipClear(),sumItUp();
           />
           <label class="forRadio" for="5perc">5%</label>
           <input
@@ -63,7 +63,7 @@
             id="10perc"
             value=".10"
             hidden
-            onclick = customTipClear();
+            onclick = customTipClear(),sumItUp();
           />
           <label class="forRadio" for="10perc">10%</label>
           <input
@@ -73,7 +73,7 @@
             id="15perc"
             value=".15"
             hidden
-            onclick = customTipClear();
+            onclick = customTipClear(),sumItUp();
           />
           <label class="forRadio" for="15perc">15%</label>
           <input
@@ -83,7 +83,7 @@
             id="20perc"
             value=".20"
             hidden
-            onclick = customTipClear();
+            onclick = customTipClear(),sumItUp();
           />
           <label class="forRadio" for="20perc">20%</label>
           <input
@@ -93,7 +93,7 @@
             id="25perc"
             value=".25"
             hidden
-            onclick = customTipClear();
+            onclick = customTipClear(),sumItUp();
           />
           <label class="forRadio" for="25perc">25%</label>
 
@@ -117,7 +117,6 @@
             class="amountBox people"
             id="peopleAmount"
             value="0"
-            placeholder="0"
             required
           />
         </form>
