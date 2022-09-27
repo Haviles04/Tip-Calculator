@@ -27,118 +27,123 @@
 
   <body>
     <main>
-      <div id="options" class="optionsContainer">
-        <form id="optionsForm" class="optionsForm">
-          <!--Bill amount section-->
+      <div id="main" class="mainDiv">
+        <div id="options" class="optionsContainer">
+          <form id="optionsForm" class="optionsForm">
+            <!--Bill amount section-->
 
-          <label class="blockLabel" for="billAmount">Bill</label>
-          <p id ="invalidBill" class="validity">Must be greater than 0.</p>
-          <input
-            type="number"
-            name="billAmount"
-            class="amountBox bill"
-            id="billAmount"
-            value="0"
-            required
-            min=".01"
-          />
+            <label class="blockLabel billLabel" for="billAmount">Bill</label>
+            <p id="invalidBill" class="invalidBill validity">Must be greater than 0.</p>
+            <input
+              type="number"
+              name="billAmount"
+              class="amountBox bill"
+              id="billAmount"
+              value="0"
+              required
+              min=".01"
+            />
 
-          <!--Tip amount section-->
+            <!--Tip amount section-->
 
-          <label class="blockLabel">Select Tip %</label>
-          <p class="validity" id="invalidTip">Please select or enter a tip</p>
-          <input
-            type="radio"
-            name="perc"
-            class="tipBtn"
-            id="5perc"
-            value=".05"
-            hidden
-            onclick = customTipClear(),sumItUp();
-          />
-          <label class="forRadio" for="5perc">5%</label>
-          <input
-            type="radio"
-            name="perc"
-            class="tipBtn"
-            id="10perc"
-            value=".10"
-            hidden
-            onclick = customTipClear(),sumItUp();
-          />
-          <label class="forRadio" for="10perc">10%</label>
-          <input
-            type="radio"
-            name="perc"
-            class="tipBtn"
-            id="15perc"
-            value=".15"
-            hidden
-            onclick = customTipClear(),sumItUp();
-          />
-          <label class="forRadio" for="15perc">15%</label>
-          <input
-            type="radio"
-            name="perc"
-            class="tipBtn"
-            id="20perc"
-            value=".20"
-            hidden
-            onclick = customTipClear(),sumItUp();
-          />
-          <label class="forRadio" for="20perc">20%</label>
-          <input
-            type="radio"
-            name="perc"
-            class="tipBtn"
-            id="25perc"
-            value=".25"
-            hidden
-            onclick = customTipClear(),sumItUp();
-          />
-          <label class="forRadio" for="25perc">25%</label>
+            <label class="blockLabel">Select Tip %</label>
+            <p class="validity" id="invalidTip">Please select or enter a tip</p>
+            <input
+              type="radio"
+              name="perc"
+              class="tipBtn"
+              id="5perc"
+              value=".05"
+              hidden
+              onclick="customTipClear(),sumItUp();"
+            />
+            <label class="forRadio" for="5perc">5%</label>
+            <input
+              type="radio"
+              name="perc"
+              class="tipBtn"
+              id="10perc"
+              value=".10"
+              hidden
+              onclick="customTipClear(),sumItUp();"
+            />
+            <label class="forRadio" for="10perc">10%</label>
+            <input
+              type="radio"
+              name="perc"
+              class="tipBtn"
+              id="15perc"
+              value=".15"
+              hidden
+              onclick="customTipClear(),sumItUp();"
+            />
+            <label class="forRadio" for="15perc">15%</label>
+            <input
+              type="radio"
+              name="perc"
+              class="tipBtn"
+              id="20perc"
+              value=".20"
+              hidden
+              onclick="customTipClear(),sumItUp();"
+            />
+            <label class="forRadio" for="20perc">20%</label>
+            <input
+              type="radio"
+              name="perc"
+              class="tipBtn"
+              id="25perc"
+              value=".25"
+              hidden
+              onclick="customTipClear(),sumItUp();"
+            />
+            <label class="forRadio" for="25perc">25%</label>
 
-          <input
-            type="number"
-            name="customTip"
-            class="customTip"
-            id="customTip"
-            value=""
-            placeholder="Custom"
-            onclick = customTipChange();
-          />
+            <input
+              type="number"
+              name="customTip"
+              class="customTip"
+              id="customTip"
+              value=""
+              placeholder="Custom"
+              onclick="customTipChange();"
+            />
 
-          <!--Number of people section-->
+            <!--Number of people section-->
 
-          <label class="blockLabel" for="peopleAmount">Number Of People</label>
-          <p class="validity" id="invalidPeople">Must be greater than 0.</p>
-          <input
-            type="number"
-            name="peopleAmount"
-            class="amountBox people"
-            id="peopleAmount"
-            value="0"
-            required
-            min="1";
-          />
-        </form>
-      </div>
-
-      <!--Calculated values-->
-
-      <div id="calculated" class="calculatedContainer">
-        <div class="amountDiv">
-          <span class="calcLabelAmount">Tip Amount</span>
-          <span class="pp Amount">/ person</span>
-          <span class="calcLabelTotal">Total</span>
-          <span class="pp Total">/ person</span>
-        </div>
-        <div class="bigNumDiv">
-          <span id="tipAmountBig" class="bigNum Amount">$0.00</span>
-          <span id="totalAmountBig" class="bigNum AmountPP">$0.00</span>
+            <label class="blockLabel" for="peopleAmount"
+              >Number Of People</label
+            >
+            <p class="validity" id="invalidPeople">Must be greater than 0.</p>
+            <input
+              type="number"
+              name="peopleAmount"
+              class="amountBox people"
+              id="peopleAmount"
+              value="0"
+              required
+              min="1"
+              ;
+            />
+          </form>
         </div>
 
-        <button class="resetBtn" id="reset">Reset</button>
+        <!--Calculated values-->
+
+        <div id="calculated" class="calculatedContainer">
+          <div class="amountDiv">
+            <span class="calcLabelAmount">Tip Amount</span>
+            <span class="pp Amount">/ person</span>
+            <span class="calcLabelTotal">Total</span>
+            <span class="pp Total">/ person</span>
+          </div>
+          <div class="bigNumDiv">
+            <span id="tipAmountBig" class="bigNum Amount">$0.00</span>
+            <span id="totalAmountBig" class="bigNum AmountPP">$0.00</span>
+          </div>
+
+          <button class="resetBtn" id="reset">Reset</button>
+        </div>
       </div>
     </main>
   </body>

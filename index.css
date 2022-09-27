@@ -19,8 +19,7 @@ header{
     line-height: .75;
 }
 
-main{
-    margin: 0 auto;
+.mainDiv{
     background-color: white;
     display:flex;
     flex-wrap: wrap;
@@ -170,17 +169,6 @@ form{
     text-align: end;
   }
 
-  .iconForBill{
-    position: relative;
-    left: 25px;
-    z-index: 1;
-  }
-
-  .iconForPeople{
-  position: relative;
-  left: 25px;
-  z-index: 1;
-  }
 
   .calculatedContainer {
     background-color: hsl(183, 100%, 15%);
@@ -244,15 +232,67 @@ form{
 
 
   .validity {
-    visibility: hidden;
+    visibility: visible;
     font-size: 10px;
     color: red;
     margin-top: 50px;
   }
 
-/*- Very dark cyan: hsl(183, 100%, 15%)
-- Dark grayish cyan: hsl(186, 14%, 43%)
-- Grayish cyan: hsl(184, 14%, 56%)
-- Light grayish cyan: hsl(185, 41%, 84%)
-- Very light grayish cyan: hsl(189, 41%, 97%)
-- White: hsl(0, 0%, 100%)*/
+
+@media (max-width: 920px) {
+
+  .blockLabel{
+    width: 25%;
+  }
+
+  .mainDiv{
+    width: 100vw;  
+  }
+
+  .optionForm{
+    width:300px;
+    margin: auto;
+  }
+  
+  form *{
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  .forRadio{
+    margin: 0 auto;
+    margin-bottom: 3px;
+  
+  }
+  
+  .customTip{
+    margin-top:0;
+    margin-right:30px;
+    margin-left: 27px;
+  }
+
+  .billLabel{
+    margin-top: 5px;
+  }
+
+  .invalidBill{
+    margin-top: 5px;
+  }
+
+  .optionsContainer{
+    width: 350px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 0;
+    margin-top: 2px;
+  }
+  
+  .amountBox{
+    width: 300px;
+  }
+  
+  .calculatedContainer{
+    margin: 0 auto;
+    width: 350px;
+  }
+}
