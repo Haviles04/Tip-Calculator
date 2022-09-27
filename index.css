@@ -56,7 +56,8 @@ input::-webkit-inner-spin-button {
 .amountBox{
     display: block;
     background-color: hsl(189, 41%, 97%);
-    border:none;
+    box-sizing: border-box;
+    border: solid 2px transparent;
     height: 40px;
     width: 375px;
     position: relative;
@@ -232,18 +233,14 @@ form{
 
 
   .validity {
-    visibility: visible;
+    visibility: hidden;
     font-size: 10px;
     color: red;
     margin-top: 50px;
   }
 
 
-@media (max-width: 920px) {
-
-  .blockLabel{
-    width: 25%;
-  }
+@media only screen and (max-width: 930px) {
 
   .mainDiv{
     width: 100vw;  
@@ -261,7 +258,8 @@ form{
 
   .forRadio{
     margin: 0 auto;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+    margin-top: 0;
   
   }
   
@@ -269,22 +267,26 @@ form{
     margin-top:0;
     margin-right:30px;
     margin-left: 27px;
+    margin-bottom: 5px;
   }
 
-  .billLabel{
+  .blockLabel{
     margin-top: 5px;
   }
 
+
+  
   .invalidBill{
     margin-top: 5px;
   }
 
   .optionsContainer{
     width: 350px;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     padding-top: 0;
-    margin-top: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   
   .amountBox{
@@ -293,6 +295,8 @@ form{
   
   .calculatedContainer{
     margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 350px;
   }
 }
